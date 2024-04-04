@@ -9,7 +9,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 
-// VARIABLES
+// VARIABLES  
 let theme = 'light';
 let bookCover = null;
 let lightSwitch = null;
@@ -185,6 +185,9 @@ gltfLoader.load(
       if (child.name === 'Book') {
         bookCover = child.children[0];
 
+        bookCover.material = new THREE.MeshStandardMaterial({
+          color: 0x000,
+        });
         // adding texture to book
         const bookTexture = new THREE.TextureLoader().load(
           'textures/book-inner.jpg'
@@ -317,7 +320,7 @@ function loadIntroText() {
       new THREE.MeshPhongMaterial({ color: 0x171f27, flatShading: true }),
       new THREE.MeshPhongMaterial({ color: 0xffffff }),
     ];
-    const titleGeo = new TextGeometry('SUSHIL THAPA', {
+    const titleGeo = new TextGeometry('Pratham Manocha', {
       font: font,
       size: 0.08,
       height: 0.01,
@@ -334,7 +337,7 @@ function loadIntroText() {
       new THREE.MeshPhongMaterial({ color: 0xffffff }),
     ];
     const subTitleGeo = new TextGeometry(
-      'Web Designer / Developer / Content Creator',
+      'Software Developer',
       {
         font: font,
         size: 0.018,
