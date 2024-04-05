@@ -28,20 +28,20 @@ let clipNames = [
 ];
 let projects = [
   {
-    image: 'textures/project-spaze.webp',
-    url: 'https://www.spaze.social/',
+    image: 'textures/project-rip.png',
+    url: 'https://www.royalindianandpakistani.com.au/',
   },
   {
-    image: 'textures/project-myteachers.jpg',
-    url: 'https://myteachers.com.au/',
+    image: 'textures/project-blc.png',
+    url: 'https://www.blackluxetransfers.com.au',
   },
   {
-    image: 'textures/project-wholesale.jpg',
-    url: 'https://wholesale.com.np/',
+    image: 'textures/project-onegocare.png',
+    url: 'https://www.onegocare.com.au',
   },
   {
-    image: 'textures/project-pelotero.jpg',
-    url: 'https://www.peloterosenlaweb.com/',
+    image: 'textures/project-bbr.png',
+    url: 'https://www.brisbanebikrental.com.au',
   },
 ];
 let aboutCameraPos = {
@@ -63,6 +63,16 @@ let projectsCameraRot = {
   x: 0.05,
   y: 0.05,
   z: 0,
+};
+let ExploreCameraPos = {
+  x: 0.12,
+  y: 0.2,
+  z: 0.55,
+};
+let ExploreCameraRot = {
+  x: 0.12,
+  y: 0.2,
+  z: 0.55,
 };
 
 // SCENE & CAMERA
@@ -275,7 +285,7 @@ scene.add(pointLight2);
 scene.add(pointLight3);
 scene.add(pointLight4);
 
-// SETUP HELPERS
+// // SETUP HELPERS
 // const axesHelper = new THREE.AxesHelper(5);
 // scene.add(axesHelper);
 // const gridHelper = new THREE.GridHelper(30, 30);
@@ -285,7 +295,7 @@ scene.add(pointLight4);
 // const pointLightHelper = new THREE.PointLightHelper(fanLight3, 0.03);
 // scene.add(pointLightHelper);
 
-// ADD GUI
+// // ADD GUI
 // const gui = new dat.GUI();
 // const options = {
 //   lightX: 0,
