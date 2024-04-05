@@ -41,18 +41,18 @@ let projects = [
   },
   {
     image: 'textures/project-bbr.png',
-    url: 'https://www.brisbanebikrental.com.au',
+    url: 'https://www.brisbanebikerental.com.au',
   },
 ];
 let aboutCameraPos = {
   x: 0.12,
   y: 0.2,
-  z: 0.55,
+  z: 0.5,
 };
 let aboutCameraRot = {
   x: -1.54,
   y: 0.13,
-  z: 1.41,
+  z: 1.6,
 };
 let projectsCameraPos = {
   x: 1,
@@ -347,7 +347,7 @@ function loadIntroText() {
       new THREE.MeshPhongMaterial({ color: 0xffffff }),
     ];
     const subTitleGeo = new TextGeometry(
-      'Software Developer',
+      'Software Developer | DevOps Consultant | Digital Marketing Strategist',
       {
         font: font,
         size: 0.018,
